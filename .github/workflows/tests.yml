@@ -37,11 +37,13 @@ jobs:
         run: |
           composer create-project drupal/recommended-project:${{ matrix.drupal-version }} /tmp/drupal --no-interaction
           cd /tmp/drupal
+          # Remove lock file to avoid conflicts
+          rm composer.lock
           composer config repositories.local '{"type": "path", "url": "'$GITHUB_WORKSPACE'", "options": {"symlink": false}}'
           composer config minimum-stability dev
           composer config prefer-stable true
-          composer require --dev drupal/core-dev:${{ matrix.drupal-version }} --with-all-dependencies --no-interaction
-          composer require "elektrorl/metatag_ai_generate:@dev" drupal/metatag drupal/ai drupal/key --no-interaction
+          # Install everything together with update to resolve dependencies
+          composer require --dev "drupal/core-dev:${{ matrix.drupal-version }}" "elektrorl/metatag_ai_generate:@dev" drupal/metatag drupal/ai drupal/key --no-interaction --update-with-all-dependencies
 
       - name: Run PHPUnit
         run: |
