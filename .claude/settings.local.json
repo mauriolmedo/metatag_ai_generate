@@ -1,0 +1,12 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "maxmsp",
+    "serena"
+  ],
+  "permissions": {
+    "allow": [
+      "mcp__serena__read_file"
+    ]
+  }
+}
