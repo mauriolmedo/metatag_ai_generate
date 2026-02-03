@@ -6,14 +6,9 @@
 
 *Automatically generate optimized meta descriptions using cutting-edge AI models directly from your Drupal content editor*
 
-[![GitHub Release](https://img.shields.io/github/v/release/elektrorl/metatag_ai_generate?style=for-the-badge&logo=github)](https://github.com/elektrorl/metatag_ai_generate/releases)
-[![Tests](https://img.shields.io/github/actions/workflow/status/elektrorl/metatag_ai_generate/tests.yml?branch=main&style=for-the-badge&logo=github-actions&label=Tests)](https://github.com/elektrorl/metatag_ai_generate/actions/workflows/tests.yml)
-[![Coding Standards](https://img.shields.io/github/actions/workflow/status/elektrorl/metatag_ai_generate/coding-standards.yml?branch=main&style=for-the-badge&logo=php&label=PHPCS)](https://github.com/elektrorl/metatag_ai_generate/actions/workflows/coding-standards.yml)
-
-[![Drupal](https://img.shields.io/badge/Drupal-10.4%2B%20%7C%2011-0678BE?style=for-the-badge&logo=drupal&logoColor=white)](https://www.drupal.org)
+[![Drupal](https://img.shields.io/badge/Drupal-10.2%2B%20%7C%2011-0678BE?style=for-the-badge&logo=drupal&logoColor=white)](https://www.drupal.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
 [![License](https://img.shields.io/badge/License-GPL--2.0+-green?style=for-the-badge)](LICENSE)
-[![Packagist](https://img.shields.io/packagist/dt/elektrorl/metatag_ai_generate?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/elektrorl/metatag_ai_generate)
 
 [Features](#features) • [Installation](#installation) • [Configuration](#configuration) • [Usage](#usage) • [Troubleshooting](#troubleshooting) • [Multilingual Support](#multilingual-support)
 
