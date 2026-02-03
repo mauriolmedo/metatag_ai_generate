@@ -40,6 +40,7 @@ jobs:
           composer config repositories.local '{"type": "path", "url": "'$GITHUB_WORKSPACE'", "options": {"symlink": false}}'
           composer config minimum-stability dev
           composer config prefer-stable true
+          composer require --dev drupal/core-dev:${{ matrix.drupal-version }} --no-interaction
           composer require "elektrorl/metatag_ai_generate:@dev" drupal/metatag drupal/ai drupal/key --no-interaction
 
       - name: Run PHPUnit
