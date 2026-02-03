@@ -37,8 +37,10 @@ jobs:
         run: |
           composer create-project drupal/recommended-project:${{ matrix.drupal-version }} /tmp/drupal --no-interaction
           cd /tmp/drupal
-          composer config repositories.local path $GITHUB_WORKSPACE
-          composer require "elektrorl/metatag_ai_generate:*" drupal/metatag drupal/ai drupal/key --no-interaction
+          composer config repositories.local '{"type": "path", "url": "'$GITHUB_WORKSPACE'", "options": {"symlink": false}}'
+          composer config minimum-stability dev
+          composer config prefer-stable true
+          composer require "elektrorl/metatag_ai_generate:@dev" drupal/metatag drupal/ai drupal/key --no-interaction
 
       - name: Run PHPUnit
         run: |
