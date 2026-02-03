@@ -2,7 +2,9 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-.env
+._*
+.Spotlight-V100
+.Trashes
 
 # IDE
 .idea/
@@ -10,6 +12,14 @@
 *.swp
 *.swo
 *~
+.project
+.buildpath
+.settings/
+
+# Environment
+.env
+.env.local
+.env.*.local
 
 # Composer
 /vendor/
@@ -19,11 +29,85 @@ composer.lock
 node_modules/
 npm-debug.log
 yarn-error.log
+yarn.lock
+package-lock.json
+.npm/
+.pnpm-store/
 
 # Testing
 /phpunit.xml
 /.phpunit.result.cache
+/coverage/
+/.phpunit.cache/
 
 # Build artifacts
 *.tar.gz
 *.zip
+*.rar
+*.7z
+
+# Drupal specific
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
+!/web/sites/*/settings.php
+!/web/sites/*/services.yml
+/web/sites/*/files/
+/web/sites/*/private/
+/web/.csslintrc
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.ht.router.php
+/web/.htaccess
+/web/autoload.php
+/web/index.php
+/web/robots.txt
+/web/update.php
+/web/web.config
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/default/default.settings.php
+/web/sites/default/default.services.yml
+/drush/contrib/
+
+# Drupal cache, temporary files
+/web/sites/*/translations
+/web/sites/simpletest/
+.sass-cache/
+*.css.map
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+
+# DDEV specific
+.ddev/.homeadditions/
+.ddev/.ddev-docker-compose-*
+.ddev/import-db/
+.ddev/db_snapshots/
+.ddev/.global_commands/
+
+# Logs
+*.log
+/logs/
+/web/sites/*/files/php/
+error_log
+
+# Backup files
+*.bak
+*.backup
+*~
+*.orig
+*.sql
+*.sql.gz
+*.dump
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+/temp/
+
+# Claude Code
+.claude.local.md
+CLAUDE.md
