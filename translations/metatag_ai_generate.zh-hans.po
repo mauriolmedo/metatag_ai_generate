@@ -1,0 +1,130 @@
+# Simplified Chinese translation for Metatag AI Generate module
+# Copyright (C) 2026
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatag AI Generate\n"
+"POT-Creation-Date: 2026-02-03\n"
+"PO-Revision-Date: 2026-02-03\n"
+"Language: zh-hans\n"
+"Language-Team: Chinese Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# SettingsForm.php
+msgid "Enable AI meta tag generation"
+msgstr "启用AI元标签生成"
+
+msgid "When enabled, AI-powered meta description generation is available for content."
+msgstr "启用后，内容可使用AI驱动的元描述生成功能。"
+
+msgid "AI Provider"
+msgstr "AI提供商"
+
+msgid "Select the AI provider and model to use for generating meta descriptions. Providers must be configured with API keys before they appear here."
+msgstr "选择用于生成元描述的AI提供商和模型。提供商必须先配置API密钥才能在此显示。"
+
+msgid "No AI providers are configured. Please <a href=\":url\">configure an AI provider</a> with a valid API key first."
+msgstr "未配置AI提供商。请先<a href=\":url\">配置AI提供商</a>并提供有效的API密钥。"
+
+msgid "AI Persona"
+msgstr "AI角色"
+
+msgid "Describe the persona the AI should adopt when generating meta descriptions. Example: \"a professional content writer specializing in SEO for e-commerce\""
+msgstr "描述AI在生成元描述时应采用的角色。例如：\"专门从事电子商务SEO的专业内容作者\""
+
+msgid "Enabled Content Types"
+msgstr "已启用内容类型"
+
+msgid "Select which content types should have AI meta tag generation enabled. Leave all unchecked to enable for all content types."
+msgstr "选择应启用AI元标签生成的内容类型。保持全部未选中以启用所有内容类型。"
+
+# GenerateController.php
+msgid "Cannot generate meta description for unsaved content. Please save the node first."
+msgstr "无法为未保存的内容生成元描述。请先保存内容。"
+
+msgid "Generation Error"
+msgstr "生成错误"
+
+msgid "Error loading node: @error"
+msgstr "加载内容时出错：@error"
+
+msgid "AI Generated Description"
+msgstr "AI生成的描述"
+
+msgid "Generated meta description"
+msgstr "生成的元描述"
+
+msgid "0 characters"
+msgstr "0个字符"
+
+msgid "Optimal length: 155-160 characters (visible on all devices). Up to 200 characters accepted."
+msgstr "最佳长度：155-160个字符（在所有设备上可见）。最多接受200个字符。"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Approve and use this description"
+msgstr "批准并使用此描述"
+
+msgid "Approve"
+msgstr "批准"
+
+msgid "Generate a new description"
+msgstr "生成新描述"
+
+msgid "Regenerate"
+msgstr "重新生成"
+
+msgid "Reject and close dialog"
+msgstr "拒绝并关闭对话框"
+
+msgid "Reject"
+msgstr "拒绝"
+
+# metatag_ai_generate.module
+msgid "Generate with AI"
+msgstr "使用AI生成"
+
+msgid "Generating..."
+msgstr "生成中..."
+
+# MetaDescriptionGenerator.php
+msgid "AI meta description generation is disabled."
+msgstr "AI元描述生成已禁用。"
+
+msgid "No AI provider configured for chat."
+msgstr "未配置用于聊天的AI提供商。"
+
+msgid "No default AI provider configured."
+msgstr "未配置默认AI提供商。"
+
+msgid "Configured AI provider is not available."
+msgstr "配置的AI提供商不可用。"
+
+msgid "No content available to generate description from."
+msgstr "没有可用于生成描述的内容。"
+
+msgid "AI returned an empty response."
+msgstr "AI返回空响应。"
+
+msgid "AI request failed: "
+msgstr "AI请求失败："
+
+msgid "An unexpected error occurred."
+msgstr "发生意外错误。"
+
+# metatag_ai_generate.links.menu.yml
+msgid "Metatag AI Generate"
+msgstr "元标签AI生成"
+
+msgid "Configure AI-powered meta description generation."
+msgstr "配置AI驱动的元描述生成。"
+
+# metatag_ai_generate.info.yml
+msgid "Generate AI-powered meta descriptions using the AI module framework."
+msgstr "使用AI模块框架生成AI驱动的元描述。"
+
+msgid "SEO"
+msgstr "SEO"

@@ -1,0 +1,11 @@
+preview-modal:
+  version: 1.x
+  js:
+    js/preview-modal.js: {}
+  css:
+    component:
+      css/preview-modal.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

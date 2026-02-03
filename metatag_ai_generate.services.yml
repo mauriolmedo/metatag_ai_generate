@@ -1,0 +1,16 @@
+services:
+  metatag_ai_generate.ai_provider:
+    class: Drupal\metatag_ai_generate\Service\AiProviderService
+    arguments: ['@ai.provider', '@config.factory']
+
+  metatag_ai_generate.content_extractor:
+    class: Drupal\metatag_ai_generate\Service\ContentExtractor
+    arguments: ['@entity_type.manager', '@renderer']
+
+  metatag_ai_generate.meta_description_generator:
+    class: Drupal\metatag_ai_generate\Service\MetaDescriptionGenerator
+    arguments:
+      - '@ai.provider'
+      - '@metatag_ai_generate.content_extractor'
+      - '@config.factory'
+      - '@logger.factory'

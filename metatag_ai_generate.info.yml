@@ -1,0 +1,11 @@
+name: 'Metatag AI Generate'
+description: 'Generate AI-powered meta descriptions using the AI module framework.'
+package: SEO
+type: module
+core_version_requirement: ^10.2 || ^11
+php: 8.1
+dependencies:
+  - metatag:metatag
+  - ai:ai
+  - key:key
+configure: metatag_ai_generate.settings

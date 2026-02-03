@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for Metatag AI Generate.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function metatag_ai_generate_install($is_syncing): void {
+  // Ne pas afficher de message lors d'une importation de config.
+  if ($is_syncing) {
+    return;
+  }
+
+  // Note: La route n'existe pas encore, mais le message guide l'admin.
+  // La route sera creee dans une phase ulterieure (Phase 5: Configuration).
+  \Drupal::messenger()->addStatus(t(
+    'Metatag AI Generate has been installed. Configure the module at <em>Configuration > Search and metadata > Metatag AI Generate</em> when the settings page is available.',
+  ));
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function metatag_ai_generate_uninstall($is_syncing): void {
+  // Nettoyer les etats si necessaire.
+  \Drupal::state()->delete('metatag_ai_generate.last_generation');
+}

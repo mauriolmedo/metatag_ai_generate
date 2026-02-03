@@ -1,0 +1,130 @@
+# Translation template for Metatag AI Generate module
+# Copyright (C) 2026
+# This file is distributed under the same license as the metatag_ai_generate module.
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatag AI Generate\n"
+"POT-Creation-Date: 2026-02-03\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# SettingsForm.php
+msgid "Enable AI meta tag generation"
+msgstr ""
+
+msgid "When enabled, AI-powered meta description generation is available for content."
+msgstr ""
+
+msgid "AI Provider"
+msgstr ""
+
+msgid "Select the AI provider and model to use for generating meta descriptions. Providers must be configured with API keys before they appear here."
+msgstr ""
+
+msgid "No AI providers are configured. Please <a href=\":url\">configure an AI provider</a> with a valid API key first."
+msgstr ""
+
+msgid "AI Persona"
+msgstr ""
+
+msgid "Describe the persona the AI should adopt when generating meta descriptions. Example: \"a professional content writer specializing in SEO for e-commerce\""
+msgstr ""
+
+msgid "Enabled Content Types"
+msgstr ""
+
+msgid "Select which content types should have AI meta tag generation enabled. Leave all unchecked to enable for all content types."
+msgstr ""
+
+# GenerateController.php
+msgid "Cannot generate meta description for unsaved content. Please save the node first."
+msgstr ""
+
+msgid "Generation Error"
+msgstr ""
+
+msgid "Error loading node: @error"
+msgstr ""
+
+msgid "AI Generated Description"
+msgstr ""
+
+msgid "Generated meta description"
+msgstr ""
+
+msgid "0 characters"
+msgstr ""
+
+msgid "Optimal length: 155-160 characters (visible on all devices). Up to 200 characters accepted."
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Approve and use this description"
+msgstr ""
+
+msgid "Approve"
+msgstr ""
+
+msgid "Generate a new description"
+msgstr ""
+
+msgid "Regenerate"
+msgstr ""
+
+msgid "Reject and close dialog"
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+# metatag_ai_generate.module
+msgid "Generate with AI"
+msgstr ""
+
+msgid "Generating..."
+msgstr ""
+
+# MetaDescriptionGenerator.php
+msgid "AI meta description generation is disabled."
+msgstr ""
+
+msgid "No AI provider configured for chat."
+msgstr ""
+
+msgid "No default AI provider configured."
+msgstr ""
+
+msgid "Configured AI provider is not available."
+msgstr ""
+
+msgid "No content available to generate description from."
+msgstr ""
+
+msgid "AI returned an empty response."
+msgstr ""
+
+msgid "AI request failed: "
+msgstr ""
+
+msgid "An unexpected error occurred."
+msgstr ""
+
+# metatag_ai_generate.links.menu.yml
+msgid "Metatag AI Generate"
+msgstr ""
+
+msgid "Configure AI-powered meta description generation."
+msgstr ""
+
+# metatag_ai_generate.info.yml
+msgid "Generate AI-powered meta descriptions using the AI module framework."
+msgstr ""
+
+msgid "SEO"
+msgstr ""

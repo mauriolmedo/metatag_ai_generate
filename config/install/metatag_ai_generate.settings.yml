@@ -1,0 +1,5 @@
+langcode: en
+enabled: false
+default_provider: null
+persona: 'a professional content writer specializing in SEO'
+enabled_bundles: []

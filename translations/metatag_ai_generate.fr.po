@@ -1,0 +1,130 @@
+# French translation for Metatag AI Generate module
+# Copyright (C) 2026
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatag AI Generate\n"
+"POT-Creation-Date: 2026-02-03\n"
+"PO-Revision-Date: 2026-02-03\n"
+"Language: fr\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# SettingsForm.php
+msgid "Enable AI meta tag generation"
+msgstr "Activer la génération de méta-tags par IA"
+
+msgid "When enabled, AI-powered meta description generation is available for content."
+msgstr "Lorsqu'activée, la génération de méta-descriptions par IA est disponible pour le contenu."
+
+msgid "AI Provider"
+msgstr "Fournisseur IA"
+
+msgid "Select the AI provider and model to use for generating meta descriptions. Providers must be configured with API keys before they appear here."
+msgstr "Sélectionnez le fournisseur et le modèle IA à utiliser pour générer les méta-descriptions. Les fournisseurs doivent être configurés avec des clés API avant d'apparaître ici."
+
+msgid "No AI providers are configured. Please <a href=\":url\">configure an AI provider</a> with a valid API key first."
+msgstr "Aucun fournisseur IA n'est configuré. Veuillez <a href=\":url\">configurer un fournisseur IA</a> avec une clé API valide d'abord."
+
+msgid "AI Persona"
+msgstr "Persona IA"
+
+msgid "Describe the persona the AI should adopt when generating meta descriptions. Example: \"a professional content writer specializing in SEO for e-commerce\""
+msgstr "Décrivez le persona que l'IA doit adopter lors de la génération des méta-descriptions. Exemple : \"un rédacteur de contenu professionnel spécialisé en SEO pour l'e-commerce\""
+
+msgid "Enabled Content Types"
+msgstr "Types de contenu activés"
+
+msgid "Select which content types should have AI meta tag generation enabled. Leave all unchecked to enable for all content types."
+msgstr "Sélectionnez les types de contenu pour lesquels la génération de méta-tags par IA doit être activée. Laissez tout décoché pour activer tous les types de contenu."
+
+# GenerateController.php
+msgid "Cannot generate meta description for unsaved content. Please save the node first."
+msgstr "Impossible de générer la méta-description pour un contenu non enregistré. Veuillez enregistrer le contenu d'abord."
+
+msgid "Generation Error"
+msgstr "Erreur de génération"
+
+msgid "Error loading node: @error"
+msgstr "Erreur lors du chargement du contenu : @error"
+
+msgid "AI Generated Description"
+msgstr "Description générée par IA"
+
+msgid "Generated meta description"
+msgstr "Méta-description générée"
+
+msgid "0 characters"
+msgstr "0 caractères"
+
+msgid "Optimal length: 155-160 characters (visible on all devices). Up to 200 characters accepted."
+msgstr "Longueur optimale : 155-160 caractères (visible sur tous les appareils). Jusqu'à 200 caractères acceptés."
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Approve and use this description"
+msgstr "Approuver et utiliser cette description"
+
+msgid "Approve"
+msgstr "Approuver"
+
+msgid "Generate a new description"
+msgstr "Générer une nouvelle description"
+
+msgid "Regenerate"
+msgstr "Régénérer"
+
+msgid "Reject and close dialog"
+msgstr "Rejeter et fermer la boîte de dialogue"
+
+msgid "Reject"
+msgstr "Rejeter"
+
+# metatag_ai_generate.module
+msgid "Generate with AI"
+msgstr "Générer avec l'IA"
+
+msgid "Generating..."
+msgstr "Génération en cours..."
+
+# MetaDescriptionGenerator.php
+msgid "AI meta description generation is disabled."
+msgstr "La génération de méta-descriptions par IA est désactivée."
+
+msgid "No AI provider configured for chat."
+msgstr "Aucun fournisseur IA configuré pour le chat."
+
+msgid "No default AI provider configured."
+msgstr "Aucun fournisseur IA par défaut configuré."
+
+msgid "Configured AI provider is not available."
+msgstr "Le fournisseur IA configuré n'est pas disponible."
+
+msgid "No content available to generate description from."
+msgstr "Aucun contenu disponible pour générer une description."
+
+msgid "AI returned an empty response."
+msgstr "L'IA a retourné une réponse vide."
+
+msgid "AI request failed: "
+msgstr "La requête IA a échoué : "
+
+msgid "An unexpected error occurred."
+msgstr "Une erreur inattendue s'est produite."
+
+# metatag_ai_generate.links.menu.yml
+msgid "Metatag AI Generate"
+msgstr "Génération de méta-tags IA"
+
+msgid "Configure AI-powered meta description generation."
+msgstr "Configurer la génération de méta-descriptions par IA."
+
+# metatag_ai_generate.info.yml
+msgid "Generate AI-powered meta descriptions using the AI module framework."
+msgstr "Génère des méta-descriptions alimentées par IA en utilisant le framework du module AI."
+
+msgid "SEO"
+msgstr "SEO"

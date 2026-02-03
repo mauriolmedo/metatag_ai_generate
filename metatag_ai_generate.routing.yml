@@ -1,0 +1,20 @@
+metatag_ai_generate.settings:
+  path: '/admin/config/search/metatag-ai-generate'
+  defaults:
+    _form: '\Drupal\metatag_ai_generate\Form\SettingsForm'
+    _title: 'Metatag AI Generate'
+  requirements:
+    _permission: 'administer meta tags'
+  options:
+    _admin_route: TRUE
+
+metatag_ai_generate.generate:
+  path: '/admin/metatag-ai-generate/generate'
+  defaults:
+    _controller: '\Drupal\metatag_ai_generate\Controller\GenerateController::generate'
+    _title: 'Generate Meta Description'
+  requirements:
+    _permission: 'administer meta tags'
+  options:
+    _admin_route: TRUE
+    no_cache: TRUE

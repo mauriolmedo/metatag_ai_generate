@@ -1,0 +1,6 @@
+metatag_ai_generate.settings:
+  title: 'Metatag AI Generate'
+  route_name: metatag_ai_generate.settings
+  description: 'Configure AI-powered meta description generation.'
+  parent: system.admin_config_search
+  weight: 10

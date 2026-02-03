@@ -1,0 +1,23 @@
+metatag_ai_generate.settings:
+  type: config_object
+  label: 'Metatag AI Generate settings'
+  mapping:
+    langcode:
+      type: string
+      label: 'Language code'
+    enabled:
+      type: boolean
+      label: 'Enable AI meta tag generation'
+    default_provider:
+      type: string
+      label: 'Default AI provider and model'
+      nullable: true
+    persona:
+      type: text
+      label: 'Site persona/tone for AI generations'
+    enabled_bundles:
+      type: sequence
+      label: 'Enabled content type bundles'
+      sequence:
+        type: string
+        label: 'Bundle machine name'

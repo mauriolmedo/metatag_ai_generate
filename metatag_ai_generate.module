@@ -1,0 +1,95 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Metatag AI Generate.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\node\NodeForm;
+
+/**
+ * Implements hook_form_node_form_alter().
+ *
+ * Adds the "Generate with AI" button to node forms when metatag fields exist.
+ */
+function metatag_ai_generate_form_node_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  // Check if the module is enabled via config.
+  $config = \Drupal::config('metatag_ai_generate.settings');
+  if (!$config->get('enabled')) {
+    return;
+  }
+
+  // Verify form is a NodeForm.
+  $form_object = $form_state->getFormObject();
+  if (!$form_object instanceof NodeForm) {
+    return;
+  }
+
+  // Get the node entity.
+  $node = $form_object->getEntity();
+  $node_id = $node->id() ?: 'new';
+
+  // Build the AJAX URL without query parameters.
+  $ajax_url = Url::fromRoute('metatag_ai_generate.generate');
+
+  // Create the generate button.
+  $generate_button = [
+    '#type' => 'button',
+    '#value' => t('Generate with AI'),
+    '#weight' => -10,
+    '#attributes' => [
+      'class' => ['button--primary'],
+    ],
+    '#attached' => [
+      'library' => ['core/drupal.dialog.ajax'],
+      'drupalSettings' => [
+        'metatagAiGenerate' => [
+          'nodeId' => $node_id,
+          'generateUrl' => $ajax_url->toString() . '?node_id=' . $node_id,
+        ],
+      ],
+    ],
+    '#ajax' => [
+      'url' => $ajax_url,
+      'options' => [
+        'query' => [
+          'node_id' => $node_id,
+        ],
+      ],
+      'event' => 'click',
+      'progress' => [
+        'type' => 'throbber',
+        'message' => t('Generating...'),
+      ],
+    ],
+    // Prevent form validation when clicking this button.
+    '#limit_validation_errors' => [],
+  ];
+
+  // Place button in metatag fieldset if it exists.
+  // The metatag field widget uses a 'details' element with #group='advanced'
+  // for sidebar placement in Claro. The structure is:
+  // $form['field_meta'] = container (no #group)
+  // $form['field_meta']['widget'][0] = details with #group='advanced' (sidebar)
+  if (isset($form['field_meta']['widget'][0])) {
+    $form['field_meta']['widget'][0]['metatag_ai_generate_button'] = $generate_button;
+    $form['field_meta']['widget'][0]['metatag_ai_generate_button']['#prefix'] = '<div class="metatag-ai-generate-wrapper" style="display: block; margin-bottom: 1em;">';
+    $form['field_meta']['widget'][0]['metatag_ai_generate_button']['#suffix'] = '</div>';
+    $form['field_meta']['widget'][0]['metatag_ai_generate_button']['#weight'] = -10;
+  }
+  elseif (isset($form['field_meta'])) {
+    // Fallback: metatag field exists but different structure.
+    $form['field_meta']['metatag_ai_generate_button'] = $generate_button;
+    $form['field_meta']['metatag_ai_generate_button']['#prefix'] = '<div class="metatag-ai-generate-wrapper" style="display: block; margin-bottom: 1em;">';
+    $form['field_meta']['metatag_ai_generate_button']['#suffix'] = '</div>';
+    $form['field_meta']['metatag_ai_generate_button']['#weight'] = -10;
+  }
+  else {
+    // If no metatag field, add button at form level.
+    $form['metatag_ai_generate_button'] = $generate_button;
+    $form['metatag_ai_generate_button']['#prefix'] = '<div class="metatag-ai-generate-wrapper" style="display: block; margin-bottom: 1em;">';
+    $form['metatag_ai_generate_button']['#suffix'] = '</div>';
+  }
+}

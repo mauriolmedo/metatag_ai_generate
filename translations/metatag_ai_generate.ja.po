@@ -1,0 +1,130 @@
+# Japanese translation for Metatag AI Generate module
+# Copyright (C) 2026
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatag AI Generate\n"
+"POT-Creation-Date: 2026-02-03\n"
+"PO-Revision-Date: 2026-02-03\n"
+"Language: ja\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# SettingsForm.php
+msgid "Enable AI meta tag generation"
+msgstr "AIメタタグ生成を有効化"
+
+msgid "When enabled, AI-powered meta description generation is available for content."
+msgstr "有効にすると、コンテンツにAI駆動のメタディスクリプション生成が利用可能になります。"
+
+msgid "AI Provider"
+msgstr "AIプロバイダー"
+
+msgid "Select the AI provider and model to use for generating meta descriptions. Providers must be configured with API keys before they appear here."
+msgstr "メタディスクリプション生成に使用するAIプロバイダーとモデルを選択してください。プロバイダーはここに表示される前にAPIキーで設定する必要があります。"
+
+msgid "No AI providers are configured. Please <a href=\":url\">configure an AI provider</a> with a valid API key first."
+msgstr "AIプロバイダーが設定されていません。まず有効なAPIキーで<a href=\":url\">AIプロバイダーを設定</a>してください。"
+
+msgid "AI Persona"
+msgstr "AIペルソナ"
+
+msgid "Describe the persona the AI should adopt when generating meta descriptions. Example: \"a professional content writer specializing in SEO for e-commerce\""
+msgstr "メタディスクリプション生成時にAIが採用すべきペルソナを記述してください。例：「eコマースのSEOに特化したプロのコンテンツライター」"
+
+msgid "Enabled Content Types"
+msgstr "有効なコンテンツタイプ"
+
+msgid "Select which content types should have AI meta tag generation enabled. Leave all unchecked to enable for all content types."
+msgstr "AIメタタグ生成を有効にするコンテンツタイプを選択してください。すべてのコンテンツタイプで有効にする場合は、すべてチェックを外してください。"
+
+# GenerateController.php
+msgid "Cannot generate meta description for unsaved content. Please save the node first."
+msgstr "未保存のコンテンツに対してメタディスクリプションを生成できません。まずコンテンツを保存してください。"
+
+msgid "Generation Error"
+msgstr "生成エラー"
+
+msgid "Error loading node: @error"
+msgstr "コンテンツの読み込みエラー：@error"
+
+msgid "AI Generated Description"
+msgstr "AI生成ディスクリプション"
+
+msgid "Generated meta description"
+msgstr "生成されたメタディスクリプション"
+
+msgid "0 characters"
+msgstr "0文字"
+
+msgid "Optimal length: 155-160 characters (visible on all devices). Up to 200 characters accepted."
+msgstr "最適な長さ：155-160文字（すべてのデバイスで表示）。最大200文字まで受け入れられます。"
+
+msgid "Actions"
+msgstr "アクション"
+
+msgid "Approve and use this description"
+msgstr "このディスクリプションを承認して使用"
+
+msgid "Approve"
+msgstr "承認"
+
+msgid "Generate a new description"
+msgstr "新しいディスクリプションを生成"
+
+msgid "Regenerate"
+msgstr "再生成"
+
+msgid "Reject and close dialog"
+msgstr "拒否してダイアログを閉じる"
+
+msgid "Reject"
+msgstr "拒否"
+
+# metatag_ai_generate.module
+msgid "Generate with AI"
+msgstr "AIで生成"
+
+msgid "Generating..."
+msgstr "生成中..."
+
+# MetaDescriptionGenerator.php
+msgid "AI meta description generation is disabled."
+msgstr "AIメタディスクリプション生成が無効になっています。"
+
+msgid "No AI provider configured for chat."
+msgstr "チャット用のAIプロバイダーが設定されていません。"
+
+msgid "No default AI provider configured."
+msgstr "デフォルトのAIプロバイダーが設定されていません。"
+
+msgid "Configured AI provider is not available."
+msgstr "設定されたAIプロバイダーが利用できません。"
+
+msgid "No content available to generate description from."
+msgstr "ディスクリプション生成に利用できるコンテンツがありません。"
+
+msgid "AI returned an empty response."
+msgstr "AIが空の応答を返しました。"
+
+msgid "AI request failed: "
+msgstr "AIリクエストが失敗しました："
+
+msgid "An unexpected error occurred."
+msgstr "予期しないエラーが発生しました。"
+
+# metatag_ai_generate.links.menu.yml
+msgid "Metatag AI Generate"
+msgstr "メタタグAI生成"
+
+msgid "Configure AI-powered meta description generation."
+msgstr "AI駆動のメタディスクリプション生成を設定します。"
+
+# metatag_ai_generate.info.yml
+msgid "Generate AI-powered meta descriptions using the AI module framework."
+msgstr "AIモジュールフレームワークを使用してAI駆動のメタディスクリプションを生成します。"
+
+msgid "SEO"
+msgstr "SEO"
